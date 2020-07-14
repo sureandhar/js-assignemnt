@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <h1>Get current date</h1>
+
+    </head>
+<body>
+    <script>
+var da=new Date();
+var month=da.getMonth()+1;
+if(month<10)
+{
+    var tmonth="0"+month;
+}
+else
+{
+    var tmonth=month;
+}
+var day=da.getDate();
+var year=da.getFullYear();
+if(day<10)
+{
+    var tday="0"+day;
+}
+else
+{
+    var tday=day;
+}
+document.writeln(tmonth+"-"+tday+"-"+year)
+
+document.writeln("<br>"+tmonth+"/"+tday+"/"+year)
+
+    </script>
+    
+</body>
+
+</html>
