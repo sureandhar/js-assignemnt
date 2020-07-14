@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <h1>Display current date and time</h1>
+        
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var d=new Date();
+            var dayindex=d.getDay();
+            var day;
+            if(dayindex==0)
+            {
+                day='sunday';
+            }
+            else if(dayindex==1)
+            {
+                day='monday';
+            }
+            else if(dayindex==2)
+            {
+                day='tuesday';
+            }
+            else if(dayindex==3)
+            {
+                day='wednesday';
+            }
+            else if(dayindex==4)
+            {
+                day='thursday';
+            }
+            else if(dayindex==5)
+            {
+                day='friday';
+            }
+            else 
+            {
+                day='saturday';
+            }
+
+            document.writeln("Today is : "+ day);
+            var hour=d.getHours();
+            if (hour>=12)
+            {
+                var ft='PM'
+            }
+            else
+            {
+                var ft='AM'
+            }
+            var min=d.getMinutes();
+            var sec=d.getSeconds();
+            document.writeln("<br> Current time is : "+ hour+" "+ft+" : "+min+" : "+sec);
+
+
+        </script>
+      
+    </body>
+</html>
