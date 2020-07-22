@@ -9,7 +9,7 @@ const bt=document.getElementById('dark');
 
 
 
-let a='raj';
+let a=prompt("Enter a name");
 
 
 // console.log(us1);
